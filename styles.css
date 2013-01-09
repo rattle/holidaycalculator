@@ -1,0 +1,322 @@
+/* --------------------------------------------------------------
+
+Holiday Calculator - v1.0 - 07/07/2010
+
+Title: Mobile Stylesheet
+Author: andrew@rattlecentral.com
+
+-------------------------------------------------------------- */
+
+/* Global reset */
+/* Based upon 'reset.css' in the Yahoo! User Interface Library: http://developer.yahoo.com/yui */
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { margin:0; padding:0 }
+table { border-collapse:collapse; border-spacing:0 }
+fieldset, img { border:0 }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal }
+ol, ul, li { list-style:none }
+caption, th { text-align:left }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
+q:before, q:after { content:''}
+
+/* Global reset-RESET */
+/* The below restores some sensible defaults */
+strong { font-weight: bold }
+em { font-style: italic }
+a img { border:none } /* Gets rid of IE's blue borders */
+
+/* Body
+----------------------------------------------- */
+
+body {
+  font-family: "Helvetica Neue", helvetica, droid, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  }
+
+a:link {color: #3671a1;}
+a:hover {color: #5caae1;}
+
+/* Main
+----------------------------------------------- */
+
+article {
+  margin: 0;
+  }
+
+article, header, section, footer {display: block;}
+
+/* Headings
+----------------------------------------------- */
+
+
+/* Header
+----------------------------------------------- */
+
+header {
+  background: #efefef; padding: 10px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  overflow: hidden;
+  }
+
+header h1 {
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  }
+
+header a {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  background: url(../images/settings.png) no-repeat 0 0;
+  display: block;
+  height: 16px;
+  width: 16px;
+  text-indent: -9999px;
+  }
+
+
+/* Days left - Main status
+----------------------------------------------- */
+
+section.days {
+  text-align: center; padding: 10px 20px; background: #eef9df; margin: 0;
+  }
+
+section.days h2 strong {
+  display: block;
+  font-weight: bold;
+  background: #afd775;
+  background: -webkit-gradient(linear, left top, left bottom, from(#afd775), to(#82a550));
+  color: #2e4516;
+  font-size: 120px;
+
+  -webkit-border-radius: 90px;
+  height: 165px;
+  padding: 15px 0 0 0;
+  width: 180px;
+  text-align: center;
+  margin: 10px auto;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+  font-weight: bold;
+  vertical-align: bottom;
+  line-height: 1.2;
+  }
+
+section.care {background: #f9f6ed;}
+section.care h2 strong {
+  background: -webkit-gradient(linear, left top, left bottom, from(#eed279), to(#dcc26f));
+  color: #414110;
+  }
+
+section.warning {background: #f2e3df;}
+section.warning h2 strong {
+  background: -webkit-gradient(linear, left top, left bottom, from(#af1414), to(#971212));
+  color: #470b0b;
+  }
+
+section.days h2 span {display: block;}
+
+
+/* List
+----------------------------------------------- */
+
+section.holiday-list {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+  }
+
+h3 {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 20px;
+  }
+
+
+
+/* Table
+----------------------------------------------- */
+
+table {
+  border-collapse: inherit; /* using inherit and not collapse to solve the odd webkit right/bottom border bug */
+  width: 100%;
+  margin: 20px 0 0 0;
+  border-top: 1px solid #d1d1d1;
+  overflow: hidden;
+  }
+
+table th, table td {
+  padding: 7px;
+  border-bottom: 1px solid #d1d1d1;
+  border-top: 1px solid #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f0f0f0));
+  }
+
+table td span {
+  display: block;
+  color: #888;
+  }
+
+table tbody tr td:nth-child(1) {width: 5%; padding: 0 20px; border-right: 1px solid #d1d1d1; text-align: center;}
+table tbody tr td:nth-child(3), table tfoot tr th:nth-child(2) {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+  width: 5%;
+  border-left: 1px solid #d1d1d1;
+  padding-right: 20px;
+  }
+
+table tfoot th {
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  background: #deecf0;
+  border-top: 1px solid #eff7f9;
+  }
+
+table td a {
+  display: block;
+  height: 16px;
+  width: 16px;
+  background: url(../images/delete.png) no-repeat 0 0;
+  text-indent: -9999px;
+  }
+
+
+/* Welcome page
+----------------------------------------------- */
+
+body.intro {background: #eef9df;}
+body.intro h2 {font-size: 16px; font-weight: bold; margin: 20px 0 8px 0;}
+body.intro h3 {font-size: 16px; padding: 0; margin: 8px 0;}
+body.intro p {margin-bottom: 14px;}
+
+body.intro section {padding: 0 20px;}
+
+body.intro article ul {margin: 0 0 14px 0;}
+body.intro article ul li {list-style-type: disc; margin-left: 20px; color: #666;}
+
+section.buy-now {text-align: center;}
+section.buy-now a {display: block;}
+section.buy-now a.checkout {margin: 7px 0;}
+
+body.intro form {background: #fff;}
+body.intro form.checkout {background: transparent;}
+body.intro form.checkout input {background: none;}
+
+p.attribute {font-size: 12px; color: #666;}
+
+/* Forms
+----------------------------------------------- */
+
+form.add-holiday {
+
+  }
+
+label, .holiday-start p {font-weight: bold; display: block; margin-bottom: 6px;}
+label em {font-weight: normal; color: #454545; display: block; font-size: 13px; font-style: normal;}
+
+.holiday-start label {font-weight: normal; cursor: pointer; margin-bottom: 6px;}
+
+input, textarea, select, button {
+  font-size: 14px;
+  font-family: helvetica, 'Droid Sans', arial, sans-serif;
+  color: #333;
+
+  }
+
+input[type="radio"], input[type="checkbox"] {cursor: pointer; margin-right: 4px; vertical-align: baseline; }
+
+select {
+
+  }
+
+input, textarea {
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  padding: 0.286em 0.429em;;
+  background: #fff url(../images/field.png) repeat-x 0 0;
+  }
+
+input#holiday-count, input#holiday-amount, input#holiday-extra, input#holiday-taken {width: 40px;}
+
+form p {
+  border-top: 1px solid #ccc;
+  margin-top: 14px;
+  padding: 14px 20px 0 20px;
+  overflow: hidden;
+  }
+
+form p span {float: right}
+form p span:first-child {float: left}
+
+form.add-holiday p {border: none; padding-top: 0;}
+.holiday-start p, form p.action {border: none; padding-top: 0; overflow: visible;}
+
+form p.action button {margin-right: 10px;}
+
+.long {width: 250px;}
+.short {width: 80px;}
+.full-width {width: 100%;} /* used for textareas that span the width of page */
+.half-width {width: 50%}
+
+
+input[type="submit"], button {
+  cursor: pointer;
+  background: #aed675;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a8c351), to(#7eaa39));
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+  font-size: 12px;
+  border: 1px solid #729831;
+  border: none;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: visible;
+  width: auto;
+  -webkit-border-radius: 12px;
+  -webkit-box-shadow: 0 2px 2px #ccc;
+  }
+
+button.add-new {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  /*margin: 14px 0 0 20px;*/
+  }
+
+form p.final {border-bottom: 1px solid #ccc; padding-bottom: 14px; margin-bottom: 20px;}
+
+input[type="submit"]:hover, button:hover, .item-list a:hover {}
+
+form h3 {
+  margin-top: 20px;
+  }
+
+p.error {background: #feffdd url(../images/error.png) no-repeat 20px 45%; color: #920c0c; padding: 14px 20px 14px 40px; border: none;}
+
+/* Footer
+----------------------------------------------- */
+
+footer {
+  text-align: center;
+  padding: 0 0 20px 0;
+  font-size: 12px;
+  color: #555;
+  }
+
+body.intro footer {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  margin-top: 20px;
+  }
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" manifest="holidaycalculator.txt">
+  <head>
+    <meta charset="utf-8">
+    <title>Holiday Calculator</title>
+
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="apple-touch-icon" href="images/home-icon.png"/>
+    <link rel="apple-touch-startup-image" href="startup.png" />
+    <script type="text/javascript" src="application.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+
+  </head>
+  <body id="body">
+
+    <header id="header">
+      <h1>Holiday Calculator</h1>
+    </header>
+
+    <article>
+      <div id="page">
+      </div>
+    </article>
+
+      <script type="text/javascript">
+          var h = new HolidayCalculator();
+          h.init();
+      </script>
+
+      <footer>
+        <p>Created by <a href="http://www.rattlecentral.com">Rattle</a>. <a href="#" onclick="h.displayAboutPage(); return false;">About</a></p>
+      </footer>
+  </body>
+</html>
