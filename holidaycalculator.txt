@@ -1,4 +1,6 @@
 CACHE MANIFEST
+# VERSION 2
+
 styles.css
 images/delete.png
 images/error.png
